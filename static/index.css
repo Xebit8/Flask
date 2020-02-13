@@ -1,8 +1,105 @@
 #navbar {
-    background-color: midnightblue;
+    background-color: rgb(42, 121, 34);
 }
 
 a {
-    color: skyblue;
+    color: rgb(2, 75, 20);
+    cursor: pointer;
     
+}
+
+.card {
+    display: flex;
+    border: 2px solid green;
+    margin: 5px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 10px 15%;
+    
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bottom-ui {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    align-items: center;
+}
+
+.tags {
+    display: inline;
+    margin: 0 auto;
+}
+
+.tags span {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 1rem;
+    cursor: default;
+    margin-bottom: 10px;
+
+}
+
+.tags span.usual {
+    background-color: gray;
+    color: azure;
+}
+
+.tags span.rare {
+    background-color: rgb(0, 110, 255);
+    color: azure;
+}
+
+.tags span.exotic {
+    background-color: rgb(255, 187, 0);
+    color: azure;
+}
+
+.card:hover {
+    box-shadow: 2px 2px green;
+    transform: scale(1.03);
+}
+
+div#full-card {
+    border: 2px solid green;
+    margin: 20px auto;
+    position: fixed;
+    left: 20%;
+    top: 10vh;
+    display: none;
+    width: 60%;
+    height: 80vh;
+    background-color: azure;
+    overflow-y: auto;
+}
+
+div#full-card p {
+    padding: 35px;
+}
+
+
+a#close-btn {
+    position: fixed;
+    left: 20%;
+    top: 13vh;
+
+}
+
+a#close-btn svg {
+    fill: black;
+    background-color: azure;
+    border-radius: 50%;
+
 }
